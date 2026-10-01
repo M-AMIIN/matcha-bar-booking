@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="pv.title">Privacy</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!--
+    Privacy notice for the enquiry form, in English (below) and Norwegian (js/i18n.js, keys starting with pv.).
+    PLACEHOLDERS in [square brackets]: fill them in before launch, in both languages.
+    This is a starting point, not legal advice. Have it checked if you are unsure.
+  -->
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <nav class="nav-side nav-left" aria-label="Back">
+        <a href="index.html" data-i18n="pv.back">Back to the front page</a>
+      </nav>
+      <a class="logo" href="index.html" aria-label="Stille Matcha">
+        <span data-site="name">Stille Matcha</span>
+      </a>
+      <div class="nav-side nav-right">
+        <div class="lang-switch" role="group" aria-label="Language / Språk">
+          <button type="button" data-lang="no" aria-pressed="false" lang="nb">NO</button>
+          <button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button>
+        </div>
+      </div>
+      <div class="mobile-tools">
+        <div class="lang-switch" role="group" aria-label="Language / Språk">
+          <button type="button" data-lang="no" aria-pressed="false" lang="nb">NO</button>
+          <button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="legal">
+    <h1 data-i18n="pv.title">Privacy</h1>
+    <p class="legal-updated" data-i18n="pv.updated">Last updated: [date]</p>
+
+    <h2 data-i18n="pv.who.h">Who is responsible</h2>
+    <p data-i18n="pv.who.p">[Your name or company name], org.nr <span data-site="orgNumber"></span>, is responsible for the personal data described here. Contact: <a data-site-email href="#"></a>.</p>
+
+    <h2 data-i18n="pv.what.h">What we collect</h2>
+    <p data-i18n="pv.what.p">When you send the enquiry form we receive your name, email address, phone number if you give it, the occasion, date, number of guests, location, package and anything you write in the message. When you pay a deposit, Stripe processes your card details. We never see or store your card number.</p>
+
+    <h2 data-i18n="pv.why.h">Why we use it</h2>
+    <p data-i18n="pv.why.p">Only to answer your enquiry, send you a quote, and plan and deliver the event if you book. The legal basis is taking steps you ask for before an agreement is made, and then carrying out that agreement (GDPR article 6(1)(b)).</p>
+
+    <h2 data-i18n="pv.where.h">Where it is stored</h2>
+    <p data-i18n="pv.where.p">Enquiries arrive in our email inbox at [email provider, for example Google Workspace]. [If you use Formspree: enquiries also pass through Formspree, a form service based in the USA.] Payments are handled by Stripe. We do not share your details with anyone else and never use them for advertising.</p>
+
+    <h2 data-i18n="pv.long.h">How long we keep it</h2>
+    <p data-i18n="pv.long.p">If you don't book, we delete your enquiry within 12 months. If you book, we keep what the Norwegian Bookkeeping Act requires, such as invoices and receipts, for five years, and delete the rest within 12 months after the event.</p>
+
+    <h2 data-i18n="pv.cookies.h">Cookies</h2>
+    <p data-i18n="pv.cookies.p">This site sets no cookies and uses no tracking or analytics. It remembers your language choice in your own browser. The fonts are stored on this site, so nothing is loaded from Google.</p>
+
+    <h2 data-i18n="pv.rights.h">Your rights</h2>
+    <p data-i18n="pv.rights.p">You can ask to see the information we have about you, correct it or have it deleted. Email <a data-site-email href="#"></a>. If you think we handle your data wrongly, you can complain to Datatilsynet (datatilsynet.no).</p>
+
+    <a class="text-link back" href="index.html" data-i18n="pv.back">Back to the front page</a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-name" data-site="name">Stille Matcha</p>
+      <p class="footer-small" data-i18n="footer.small">Deposits are paid by card through Stripe. &copy; <span id="year"></span> <span data-site="name"></span></p>
+    </div>
+  </footer>
+
+  <script src="js/site.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/images.js"></script>
+  <script src="js/slots.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
